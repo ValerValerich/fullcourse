@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/font-awesome-4.7.0/css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/font-awesome-4.7.0/fonts/fontawesome-webfont.svg' %}">
+
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+{% include 'myapp/head.html' %}
+{% block content %} {% endblock %}
+{% include 'myapp/foot.html' %}
+</body>
+</html>
