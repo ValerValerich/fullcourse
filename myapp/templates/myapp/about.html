@@ -1,0 +1,28 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Добавляем Макет{% endblock %}
+
+{% block content %}
+<div class="infoabout">
+
+<div class="topabout">
+    Хотите добавить макет?
+
+</div>
+    
+<div class="contentabout">
+    Формы для добавления макета
+
+ <form method="post" class="form">
+        {% csrf_token %}
+     <div>Макеты</div>
+        {{ maketform }} <br>
+
+
+        <button class="add" type="submit">Добавить</button>
+    </form>
+
+</div>
+
+</div>
+{% endblock %}

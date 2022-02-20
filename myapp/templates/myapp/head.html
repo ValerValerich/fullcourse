@@ -1,0 +1,27 @@
+{% load static %}
+{% block head %}
+<div class="head">
+
+<div class="logo">
+    <a href=""> <img src="{% static 'myapp/img/Logo.gif' %}" alt="Лого" class="logoimg"></a>
+</div>
+
+
+<div class="link">
+    <a href="{% url 'home' %}" class="linka"><i class="fa fa-home" aria-hidden="true"></i> Главная</a>
+    <a href="{% url 'about' %}" class="linka"><i class="fa fa-plus-square" aria-hidden="true"></i> Добавляем макет</a>
+    <a href="{% url 'prod' %}" class="linka"><i class="fa fa-plus-square" aria-hidden="true"></i> Добавляем продукцию</a>
+    <a href="{% url 'comm' %}" class="linka"><i class="fa fa-plus-square" aria-hidden="true"></i> Связи</a>
+</div>
+
+<div class="user">
+    <a href="#" class="linka"><i class="fa fa-grav" aria-hidden="true"></i> Пользователь</a><br>
+    <a href="#" class="linka"><i class="fa fa-key" aria-hidden="true"></i></i> Авторизация</a><br>
+    <a href="#" class="linka"><i class="fa fa-sign-out" aria-hidden="true"></i></i> ВЫХОД</a>
+
+</div>
+    
+</div>
+
+</div>
+{% endblock %}
